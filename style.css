@@ -1,0 +1,377 @@
+@import url(styles/header.css);
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Source+Sans+Pro:ital,wght@0,400;1,600&display=swap');
+:root{
+    --cor-primaria: #000000;
+    --cor-secundaria:#F8EDE3;
+    --cor-terciaria:#A10035;
+    --cor--quaternaria:#0497cc;
+    --cor-cinza: #706a6a;
+    --fundo: #e2e2de;
+    --fonte-titulo:'Lobster', cursive;
+    --fonte-primaria:'Source Sans Pro', sans-serif;
+   
+}
+body {
+background-color: var(--fundo);
+font-size: 16px;
+box-sizing: border-box;
+}
+.cabecalho{
+    background-image: linear-gradient(180deg, #000000, #d4d4d0);
+    /*background:var(--cor-primaria); */
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding-right: 3em;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+    
+ .cabecalho__itens {
+    font-size:.8rem;
+    display: flex;
+    justify-content: center;
+    font-family: var(--fonte-primaria);
+    
+}
+.cabecalho__link{
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    border: 1px solid var(--cor-secundaria);
+    padding: .5em;
+    margin: .4em 0;
+    text-transform: uppercase;
+    border-radius: 10px;
+    font-family: var(--fonte-titulo);
+}
+.cabecalho__link:hover {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+}
+
+.banner__imagem{
+width: 100%;
+padding-top: .5em;
+}
+.apresentacao{
+padding: 1em .5em;
+text-align: center;
+
+margin: 1em;
+}
+.apresentacao__titulo, .servico__itens{
+    font-size:1.5rem;
+    font-family: var(--fonte-titulo);
+    padding:.5em;
+}
+.apresentacao__titulo, .servico__itens,.beneficios__titulo, .video__titulo, .localizacao__titulo, .cadastro-opcoes__titulo, .cadastro-selecoes__titulo, .formulario__titulo, .servico__preco{
+    font-family: var(--fonte-titulo);
+    font-size:1.5rem;
+    padding-bottom: .6em;
+    text-align: center;
+    padding-top: 1em;
+}
+.apresentacao__texto, .beneficios__texto, .cadastro-opcoes__botao, .video__texto-texto, .localizacao-endereço, .servico__texto,.formulario__rotulo{
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    line-height: 1.5em;
+    font-size:1.2rem;
+}
+.swiper{
+   width: 100%;
+}
+.swiper-slide img {
+    width: 95%;
+}
+.beneficios{
+    margin:1em;
+    background-color:var(--cor--quaternaria);
+    padding-bottom: 1.5rem;
+    text-align: center;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-primaria);
+    border-radius: 15px;
+    box-shadow: 10px 10px 40px black;
+}
+.localizacao, .video{
+    margin: 1em;
+    text-align: center; 
+}
+.video__youtube, .localizacao__mapa{
+    border-radius: 20px;
+}
+.rodape{
+    width: 100%;
+    background-image: linear-gradient(180deg,  #d4d4d0, #0e0909);
+    /*background-color: var(--cor-primaria);*/
+    color: var(--cor-secundaria);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em 0;
+}
+.rodape-logo__imagem{
+    width: 30%;
+}
+.rodape-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.rodape__texto{
+    font-size: .5rem;
+    padding: 1em
+}
+.servico {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+.servico__lista {
+    border: 1px solid black;
+    margin: 1em 2em;
+    padding: 1.5em;
+    border-radius: 20px;
+    text-align: center;
+}
+.servico__preco{
+    color: var(--cor-terciaria);
+}
+.formulario, table{
+   margin: auto;
+}
+.formulario__rotulo {
+    display: block;
+    margin:0 2em;
+    padding: 1em 0 .5em 1em;
+}
+.container-formulario, .cadastro-selecoes{
+    display: flex;
+    justify-content: center;
+}
+.input-padrao {
+    display: block;
+    text-align: center;
+    margin: auto;
+    width: 80%;
+    padding: 1em;
+   
+}
+.dados-label,.confirmacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cadastro-opcoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cadastro__seletor{
+    padding: .5em 1em;
+    border-radius: 5px;
+}
+.radio-botao {
+    display: flex;
+}
+.cadastro-opcoes__radio, .confirmacao__checkbox{
+font-family: var(--fonte-primaria);
+font-weight: 400;
+}
+.checkbox{
+    margin: 1em;
+    font-family: var(--fonte-primaria);
+    display: block;
+   text-align: center;
+}
+.enviar{
+    width: 60%;
+	padding: 15px 0;
+	background:var(--cor-primaria);
+	color: white;
+	border: none;
+	border-radius: 20px;
+	margin: 25px 0 ;
+}
+.tabela {
+    display: flex;
+    justify-content: center;
+    margin: 1em
+}
+
+thead {
+	background: #555555;
+	color: white;
+}
+table td{
+    border: 1px solid black;
+    padding: .5em;
+}
+.simbolo__imagem, .rodape-redes{
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .cabecalho__lista {
+       display: flex;
+       flex-direction: row;
+       gap: 3em;
+       justify-content: end;
+    }
+    .container__carrocel{
+        justify-content: space-between;
+        margin: 2em;
+    }
+    .swiper{
+        width: 60%;
+    }
+    .swiper-slide img {
+        width: 99%;
+    }
+    .beneficios{
+        width: 30%;
+        transition: 1s all;
+    }
+    .beneficios:hover{
+        transform: scale(1.1);
+    }
+    .servico {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .servico__lista:hover{
+        border-color: var(--cor--quaternaria);
+        border: 3px solid var(--cor--quaternaria);
+    }
+    .video__youtube, .localizacao__mapa{
+        width: 45%;
+        box-shadow: 10px 10px 40px var(--cor-primaria);
+    }
+    .video__texto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .video__texto-texto, .localizacao-endereço{
+        width: 60%;
+        padding: 2em;
+    }
+    .localizacao__texto,.container__carrocel {
+        display: flex;
+        align-items: center;
+    }  
+    .enviar{
+        width: 30%;
+        border-radius: 30px;
+    }
+    .enviar:hover{
+        background-color: var(--cor--quaternaria);
+        color: var(--cor-secundaria);
+    }
+
+}
+@media screen and (min-width:1728px) {
+    .cabecalho__link {
+        font-size: 1.2rem;
+    }
+    .apresentacao__titulo, .servico__itens,.beneficios__titulo, .video__titulo, .localizacao__titulo, .cadastro-opcoes__titulo, .cadastro-selecoes__titulo, .formulario__titulo, .servico__preco{
+        font-family: var(--fonte-titulo);
+        font-size:2rem;
+        
+    }
+    .apresentacao__texto, .beneficios__texto, .cadastro-opcoes__botao, .video__texto-texto, .localizacao-endereço, .servico__texto,.formulario__rotulo{
+        line-height: 1.5em;
+        font-size:1.5rem;
+    }
+    .container, .container-formulario{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .container__contatos{
+        width: 75%;
+    }
+    .formulario__rotulo {
+        display: block;
+        margin:0 2em;
+        padding: 1em 0 .5em 1em;
+        font-size: 1.2rem;
+    }
+    .formulario, .confirmacao{
+        width: 100%;
+    }
+   
+    .formulario__imagem{
+        display: block;
+    }
+    .formulario{
+        width: 60%;
+    }
+    .formulario__imagem-cadastro{
+        width: 10%;
+    }
+    .enviar{
+        font-size: 1.2rem;
+    }
+    .simbolo__imagem{
+        display: block;
+        width: 85%;
+        margin: 0;
+    }
+    .tabela {
+        display:flex;
+        justify-content: left;
+        margin-left: 40%
+    }
+    .rodape{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .rodape-logo__imagem{
+        width: 100%;
+    }
+    .rodape-redes{
+        display: flex;
+        justify-content: space-around;
+    }
+    .rodape-redes__imagem-redes{
+        width: 8%;
+    }
+    .rodape-redes__imagem{
+        width: 15%;
+    }
+    .rodape-logo{
+        font-display: flex;
+        flex-direction: column;
+    }
+    .lista-rodape{
+        border-left: 1px solid var(--cor-cinza); 
+        padding: 0 1em;
+    }
+    .lista-rodape__titulo{
+        font-family: var(--fonte-titulo);
+        padding-bottom: 2em;
+        font-size: 1.5em;
+    }
+    .lista-rodape__itens{
+        display: flex;
+        align-items: center;
+    }
+    .lista-rodape__link{
+        color: var(--cor-secundaria);
+        text-decoration: none;
+        padding: .8em;
+    }
+    .rodape__telefone {
+        font-size: 1.5em;
+    }
+    
+
+
+}
+
+
+   

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbearia Alura</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="reset.css">
+   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
+ </head>
+<body>
+     <header class="cabecalho">
+        <img src="img2/logo-branco.png" alt="logo Barbearia Alura">
+         <ul class="cabecalho__lista">
+             <li class="cabecalho__itens"><a href="index.html" class="cabecalho__link">Home</a></li>
+             <li class="cabecalho__itens"><a href="produtos.html"class="cabecalho__link">Produtos</a></li>
+             <li class="cabecalho__itens"><a href="contato.html"class="cabecalho__link">contatos</a></li>
+          </ul>
+    </header>
+    <main>
+        <div class="container">
+            <div class="container__contatos">
+
+                <div class="container-formulario">
+                    <form class="formulario">
+                        <legend class="formulario__titulo">Fale conosco</legend>
+
+                        <label for="nomeesobrenome" class="formulario__rotulo" >Nome e sobrenome</label>
+                        <input type="text" id="nomeesobrenome" class="input-padrao" required>
+
+                        <label for="email" class="formulario__rotulo">Email</label>
+                        <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+                        <label for="telefone" class="formulario__rotulo">Telefone</label>
+                        <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX)XXXXXXXXX">
+
+                        <label for="mensagem" class="formulario__rotulo">Mensagem</label>
+                        <textarea cols="70" rows="10" id="mensagem"class="input-padrao" required></textarea>
+                    </form>
+                </div>
+            
+                <fieldset class="cadastro-opcoes">
+                    <legend class="cadastro-opcoes__titulo">Como prefere nosso contato?</legend>
+                    <div class="cadastro-opcoes__botao">
+                        <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email"class="cadastro-opcoes__radio">Email</label>
+                        <label for="radio-tel"><input type="radio" name="contato" value="telefone" id="radio-tel"class="cadastro-opcoes__radio" >Telefone</label>
+                        <label for="radio-watsapp"><input type="radio" name="contato" valeu="whatsapp" id="radio-watsapp"class="cadastro-opcoes__radio" >Whatsapp</label>
+                    </div>    
+                </fieldset>
+
+                <fieldset class="cadastro-selecoes" >
+                    <legend class="cadastro-selecoes__titulo">Qual o melhor perido do dia para contato?</legend>
+                    <select class="cadastro__seletor">
+                        <option>Manhã</option>
+                        <option>Tarde</option>
+                        <option>Noite</option>
+                    </select>
+                </fieldset>
+
+                <div class="confirmacao">
+                    <label class="checkbox"><input type="checkbox" checked class="confirmacao__checkbox">Gostaria de receber nossas novidades por email?</label>
+                    <input type="submit" value="enviar formulário" class="enviar">
+                </div>
+
+                <div class="tabela">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Dia</th>
+                                <th>horário</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Segunda</td>
+                                <td>Fechado</td>
+                            </tr>
+                            <tr>
+                                <td>Terça</td>
+                                <td>07hs - 20hs</td>
+                            </tr>
+                            <tr>
+                                <td>Quarta</td>
+                                <td>07hs - 20hs</td>
+                            </tr>
+                            <tr>
+                                <td>Quinta</td>
+                                <td>07hs - 20hs</td>
+                            </tr>
+                            <tr>
+                                <td>Sexta</td>
+                                <td>07hs - 20hs</td>
+                            </tr>
+                            <tr>
+                                <td>Sábado</td>
+                                <td>08hs - 19hs</td>
+                            </tr>
+                            <tr>
+                                <td>Domingo</td>
+                                <td>Fechado</td>
+                            </tr>                
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+                <div class="simbolo__imagem">
+                    <img src="img/simbolo2.jpg"alt="simbolo das barbershop" class="simbolo__imagem">
+                </div>
+        </div>
+
+    </main>
+    <footer class="rodape">
+        <div class="rodape-logo">
+            <img src="img2/logo-branco.png"alt="logo Barbearia Alura" class="rodape-logo__imagem"> 
+            <p class="rodape__texto">&copy;copyright</p>
+        </div>   
+        <div class="rodape-redes">  
+             <ul class="lista-rodape">
+                <li class="lista-rodape__titulo">Whatsapp</li>
+                <li class="lista-rodape__itens">
+                <img src="img/whatsapp.png" alt="logo do whatsapp" class="rodape-redes__imagem-redes">
+                <p class="lista-rodape__link">(11) 9999-6666</p>
+            </li>
+             </ul>      
+            <ul class="lista-rodape">
+                <li class="lista-rodape__titulo">Nossas redes sociais</li>
+                <li class="lista-rodape__itens">
+                    <img src="img/Instagram.png" alt="logo do Instagram"class="rodape-redes__imagem-redes">
+                    <a href="#" class="lista-rodape__link">@barbeariaalura</a>
+                </li>
+                <li class="lista-rodape__itens">
+                    <img src="img/facebook1.png" alt="logo do Facebook"class="rodape-redes__imagem-redes" >
+                    <a href="#" class="lista-rodape__link">Barbearia Alura</a>
+                </li>
+            </ul> 
+        
+            <ul class="lista-rodape">
+                <li class="lista-rodape__titulo">Parceiros</li>
+                <li class="lista-rodape__itens">
+                    <img src="img/Alura.svg" alt="logo da Alura"class="rodape-redes__imagem" >
+                    <a href="#" class="lista-rodape__link">Alura</a>
+                </li>
+                <li class="lista-rodape__itens">
+                    <img src="img/HipstersTech.svg" alt="logo do Hipsters Ponto Tech"class="rodape-redes__imagem" >
+                    <a href="#" class="lista-rodape__link">Hipsters Ponto Tech</a>
+                </li>
+                <li class="lista-rodape__itens">
+                    <img src="img/AluraEmpresas.svg" alt="Alura Empresas"class="rodape-redes__imagem" >
+                    <a href="#" class="lista-rodape__link">Alura Empresas</a>
+                </li>                       
+            </ul>      
+        </div>      
+     </footer>
+</body>
+</html>
